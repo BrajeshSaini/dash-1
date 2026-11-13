@@ -1,0 +1,229 @@
+:root{
+    --dash-1-primary-color: #6a00de;
+    --dash-1-white: #ffffff;
+    --dash-1-light-grey: #eeedf0;
+    --dash-1-logo-bg-color: var(--dash-1-primary-color);
+    --dash-1-logo-color: var(--dash-1-white);
+
+     --bs-body-font-family: 'Poppins', sans-serif;
+
+     --default-header-height: 45px;
+
+     /* Header Right Side */
+     --icon-bg-color: #eae9ec;
+     --icon-color: #211f2e;
+     --notifiction-alert-color: #fd2e1b;
+
+     --dash-1-upgrade-btn-color: #f0f3ec;
+
+
+     /* Aside */
+     --aside-link-color: #4c4a4d;
+     --aside-icon-color: #616063;
+
+     --aside-feedback-icon-color: #555157;
+     --aside-feedback-link-color: #59575d;
+
+     /* center */
+     --center-bg-color: var(--dash-1-light-grey);
+     --center-main-heading-color: #070707;
+     --center-sub-heading-color: #414042;
+
+     --height-85-dvh: 89vh
+}
+
+
+body {
+  font-family: var(--bs-body-font-family);
+}
+
+.logo_starting_word{
+    background-color: var(--dash-1-logo-bg-color);
+    color: var(--dash-1-logo-color);
+    width:45px;
+    height:45px;
+    /* border-radius: 10px; */
+}
+
+.header-h-45{
+    height:var(--default-header-height);
+}
+button.btn-primary{
+    background-color: var(--dash-1-primary-color);
+    border-color: var(--dash-1-primary-color);
+    color: var(--dash-1-upgrade-btn-color);
+}
+
+button.btn-primary:hover, button.btn-primary:active, button.btn-primary:focus{
+    /* Mixes 20% of your primary color with 80% transparent */
+    background-color: color-mix(in srgb, var(--dash-1-primary-color) 92%, transparent);
+    /* background-color: var(--dash-1-primary-color)-20; */
+    border-color: var(--dash-1-primary-color);
+    color: var(--dash-1-upgrade-btn-color);
+}
+.header-icons {
+
+}
+.icon-contain {
+    background-color: var(--icon-bg-color);
+    width: 45px;
+    height: 45px;
+}
+.icon-contain svg{
+    width: 21px;
+    height: 21px;
+}
+
+.icon-contain.notification_icon span{
+    top: 12px; 
+    left: 22px;
+}
+
+.icon-contain.notification_icon span svg{
+    background:var(--icon-bg-color);
+    width: 10px;
+    height: 10px;
+}
+
+
+/* Main */
+.dash-left-aside .nav-item{
+height: 50px;
+}
+
+.dash-left-aside .nav-link {
+     height: var(--default-header-height);
+     color: var(--aside-link-color);
+     
+}
+.dash-left-aside .nav-link svg{
+    width: 20px;
+    height: 20px;
+    color: var(--aside-icon-color);
+}
+.dash-left-aside .nav-link.active{
+    background: linear-gradient(90deg,#6d01db 9%,#8b01ca 43%,#c001aa 92%);
+   
+     color: var(--dash-1-white);
+}
+.dash-left-aside .nav-link.active svg{
+color: var(--dash-1-white);
+}
+.main-center-section,
+.dash-right-aside{
+        background-color: var(--center-bg-color);
+    height: var(--height-85-dvh);
+}
+
+
+.main-center-section{
+    background-color: var(--center-bg-color);
+    
+}
+.main-center-section h2{
+    color: var(--center-main-heading-color);
+}
+
+.main-center-section p{
+    color: var(--center-sub-heading-color);
+}
+
+
+
+.dash-right-aside .rigth-side-headding{
+    height: var(--default-header-height);
+}
+
+.dash-right-aside .recent-activity .recent-activity-icon{
+    width: 40px;
+    height:40px;
+    background-color: var(--dash-1-white);
+}
+
+.dash-right-aside .recent-activity .recent-activity-icon svg{
+    width: 20px;
+    height: 20px;
+}
+
+.recent-activity p{
+    color: #2d2c2e;
+    font-size:14px !important;
+}
+
+.recent-activity small{
+    color:#a19ea3;
+}
+
+
+.center-action-icon {
+    margin-left:15px;
+}
+
+.center-action-icon svg{
+    width: 20px;
+    height: 20px;
+}
+.center-action-icon.active{
+    background-color: var(--dash-1-primary-color);
+    color:var(--dash-1-white);
+    width: 35px;
+    height: 35px;
+}
+
+
+
+@media screen and (max-width: 1199px){
+    
+    .icon-contain {
+        background-color: var(--icon-bg-color);
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .acitivity-section-show{
+        position: fixed;
+        top:70px;
+        right:0px;
+        background-color: var(--dash-1-white);
+        border-radius: 3px;
+        padding:10px;
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 992px){
+    
+    .main-menu-aside-show{
+        position: fixed;
+        top:70px;
+        left:0px;
+        background-color: var(--dash-1-white);
+        border-radius: 3px;
+        padding:10px;
+        display: block !important;
+                z-index: 99999;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .logo_starting_word {
+        width: 35px;
+        height: 35px;
+    }
+    .company-name{
+        font-size: 1.15rem !important;
+    }
+    
+    .icon-contain {
+        background-color: var(--icon-bg-color);
+        width: 35px;
+        height: 35px;
+    }
+
+    .icon-contain svg {
+        width: 17px;
+        height: 17px;
+    }
+}

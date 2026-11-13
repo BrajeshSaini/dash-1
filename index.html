@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/vendor/css/bootstrap.min.css" />
+    <script src="./assets/vendor/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/dash-1.css" />
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div class="container d-none">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <ul class="nav nav-tabs nav-fill">
+                    <li class="nav-item">
+                        <a href="/dash-1.html"
+                            class="nav-link d-flex align-items-center justify-content-around  active ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-1-circle" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z" />
+                            </svg>
+                            Dash 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/dash-2.html" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-2-circle" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306" />
+                            </svg>
+                            Dash 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/dash-3.html" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-3-circle" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318" />
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+                            </svg>
+                            Dash 3
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/dash-4.html" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-4-circle" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.519 5.057q.33-.527.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218" />
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+                            </svg>
+                            Dash 4
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/dash-5.html" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-5-circle" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8m15 0A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-8.006 4.158c-1.57 0-2.654-.902-2.719-2.115h1.237c.14.72.832 1.031 1.529 1.031.791 0 1.57-.597 1.57-1.681 0-.967-.732-1.57-1.582-1.57-.767 0-1.242.45-1.435.808H5.445L5.791 4h4.705v1.103H6.875l-.193 2.343h.064c.17-.258.715-.68 1.611-.68 1.383 0 2.561.944 2.561 2.585 0 1.687-1.184 2.806-2.924 2.806Z" />
+                            </svg>
+                            Dash 5
+                        </a>
+                    </li>
+                    </ui>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid dash-1-container py-3 bg-white">
+        <!-- div.row>div.col-lg-3+div.col-lg-6+div.col-lg-3  -->
+
+        <!-- Header Row -->
+        <div class="row align-items-center">
+            <!-- Logo Col -->
+            <div class="col-6 col-lg-3 col-xxl-3 d-flex align-items-center">
+
+
+
+                <div
+                    class="logo_starting_word text-uppercase d-flex align-items-center justify-content-center fs-5 rounded">
+                    R
+                </div>
+                <span class="company-name ms-3 fs-5 d-none d-sm-block">My Workspace</span>
+
+                <div class="ms-2 left-side-menu d-block d-lg-none" id="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </div>
+            </div>
+            <div class="col-md-6 col-xxl-6 d-none d-lg-block">
+                <h3 class="fs-5 header-h-45 d-flex align-items-center mb-0 fw-normal">Ask with AI Assistant</h3>
+            </div>
+            <div class="col-6 col-lg-3 col-xxl-3 d-flex justify-content-end">
+                <!-- Header Upgrade Button -->
+                <button class="btn btn-primary text-capitalize rounded-pill px-sm-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-magic" viewBox="0 0 16 16">
+                        <path
+                            d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707zM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1zM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707zM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0z" />
+                    </svg>
+                    <!-- Visible only on xs -->
+                    <!-- <span class="ms-2 d-block d-sm-none"> -->
+                    <!-- Visible only on sm -->
+                    <!-- <span class="ms-2 d-none d-sm-block d-md-none"> -->
+                    <!-- Visible only on md -->
+                    <!-- <span class="ms-2 d-none d-md-block d-lg-none" > -->
+                    <!-- Visible only on lg -->
+                    <!-- <span class="ms-2 d-none d-lg-block d-xl-none" > -->
+                    <!-- Visible only on xl -->
+                    <!-- <span class="ms-2 d-none d-xl-inline d-xxl-none" > -->
+                    <!-- Visible only on xxl -->
+                    <span class="ms-2 d-none d-xxl-inline">
+                        Upgrade
+                    </span>
+                </button>
+                <!-- Header Icons -->
+                <div id="header-icons" class="d-flex align-items-center justify-content-around"></div>
+            </div>
+        </div>
+
+
+        <!-- Main -->
+        <div class="row mt-3">
+            <!-- Left Aside -->
+            <div class="col-8 col-sm-5 col-md-4 col-lg-3 col-xl-2 d-none d-lg-block position-relative" id="main-menu-aside">
+                <div id="dash-left-aside" class="dash-left-aside"> 
+
+                    <ul class="nav nav-pills  flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center active" aria-current="page" href="#" 
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chat-left-quote me-3" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                    <path
+                                        d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z" />
+                                </svg>
+                                Chat with AI
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center " href="#">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-folder2 me-3" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5z" />
+                                </svg>
+
+
+                                Folders
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center " href="#">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-journal-medical me-3" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 4a.5.5 0 0 1 .5.5v.634l.549-.317a.5.5 0 1 1 .5.866L9 6l.549.317a.5.5 0 1 1-.5.866L8.5 6.866V7.5a.5.5 0 0 1-1 0v-.634l-.549.317a.5.5 0 1 1-.5-.866L7 6l-.549-.317a.5.5 0 0 1 .5-.866l.549.317V4.5A.5.5 0 0 1 8 4M5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+                                    <path
+                                        d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
+                                    <path
+                                        d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
+                                </svg>
+
+
+                                Documents
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center " href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-share-fill me-3" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5" />
+                                </svg>
+
+                                Shared With Me
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center " href="#">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-journals me-3" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2" />
+                                    <path
+                                        d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0" />
+                                </svg>
+
+
+                                Template
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center " href="#">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-clock-history me-3" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z" />
+                                    <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z" />
+                                    <path
+                                        d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5" />
+                                </svg>
+
+
+                                History
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+
+                      <ul class="nav nav-pills  flex-column  position-absolute bottom-0"  >
+                       
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center " href="#">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chat-left-text me-3" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                        <path
+                                            d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+                                    </svg>
+
+                             Feedback
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+            <!-- Main Content -->
+            <div class="col-lg-9 col-xl-7">
+                <div class="row main-center-section rounded-5  d-flex align-items-end justify-content-center">
+                    <!-- <div class="row"> -->
+                    <div class="col-md-12  heading-part text-center">
+                        <img src="./assets/img/center-img.png" alt="./assets/img/center-img.png"
+                            style="width:auto; height: 110px;" />
+                        <div class="row">
+                            <div class="col-8 offset-2">
+
+                                <h1 class=" fs-3">Welcome, Rishan</h1>
+                                <p class="fs-6">
+                                    Im here to listen, understand your needs, and provide clear, timely solutions.
+                                    Please
+                                    share
+                                    your questions.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>
+-->
+                    <div class="row justify-content-center"> 
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card w-100 border-0 rounded-5">
+                            <div class="card-body px-md-4 text-center text-md-start">
+                                <div class="mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-magic" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707zM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1zM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707zM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0z" />
+                                    </svg>
+                                </div>
+                                <h5 class="card-title fs-6">Write Copy</h5>
+                                <small>I am ready to Writing Understand</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card w-100 border-0 rounded-5">
+                            <div class="card-body px-md-4 text-center text-md-start">
+                                <div class="mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-image-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+                                    </svg>
+                                </div>
+                                <h5 class="card-title fs-6">Image Generation</h5>
+                                <small>I am ready to Writing Understand</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card w-100 border-0 rounded-5">
+                            <div class="card-body px-md-4 text-center text-md-start">
+                                <div class="mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-search-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018" />
+                                        <path
+                                            d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11" />
+                                    </svg>
+                                </div>
+                                <h5 class="card-title fs-6">Research</h5>
+                                <small>I am ready to Writing Understand</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                    <div class="row justify-content-center"> 
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card w-100 border-0 rounded-5">
+                            <div class="card-body px-md-4 text-center text-md-start">
+                                <div class="mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-book-half" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                                    </svg>
+                                </div>
+                                <h5 class="card-title fs-6">AI Book</h5>
+                                <small>I am ready to Writing Understand</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card w-100 border-0 rounded-5">
+                            <div class="card-body px-md-4 text-center text-md-start">
+                                <div class="mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                        <path
+                                            d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+                                    </svg>
+                                </div>
+                                <h5 class="card-title fs-6">AI Message</h5>
+                                <small>I am ready to Writing Understand</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card w-100 border-0 rounded-5">
+                            <div class="card-body px-md-4 text-center text-md-start">
+                                <div class="mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-shield-shaded" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 14.933a1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+                                    </svg>
+                                </div>
+                                <h5 class="card-title fs-6">AI Security</h5>
+                                <small>I am ready to Writing Understand</small>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+<!-- 
+                    <div class="row"> -->
+
+
+                    <div class="col-md-12 mb-3">
+                        <div class="card w-100 border-0 rounded-5">
+                            <div class="card-body">
+                                <div class="input-textarea mb-3">
+                                    <textarea class="form-control border-0" placeholder="Ask me anything.....!"
+                                        id="exampleFormControlTextarea1" rows="2"></textarea>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-6 d-flex justify-content-start align-items-center">
+
+                                        <div class="center-action-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                fill="currentColor" class="bi bi-magic" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707zM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1zM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707zM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0z" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="center-action-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                fill="currentColor" class="bi bi-cpu" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
+                                            </svg>
+
+                                        </div>
+                                        <div class="center-action-icon">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end align-items-center">
+
+                                        <div class="center-action-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                fill="currentColor" class="bi bi-layout-text-sidebar"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.5 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM3 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z" />
+                                                <path
+                                                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm12-1v14h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 0H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h9z" />
+                                            </svg>
+                                        </div>
+                                        <div class="center-action-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                fill="currentColor" class="bi bi-voicemail" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M7 8.5A3.5 3.5 0 0 1 5.95 11h4.1a3.5 3.5 0 1 1 2.45 1h-9A3.5 3.5 0 1 1 7 8.5m-6 0a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0m14 0a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0" />
+                                            </svg>
+                                        </div>
+
+                                        <div
+                                            class="center-action-icon active d-flex align-items-center justify-content-center rounded-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
+                                            </svg>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- </div> -->
+
+
+                </div>
+
+            </div>
+            <!-- Right Aside -->
+            <div class="col-9 col-sm-6 col-md-5 col-lg-2 col-xl-3 d-none d-xl-block" id="activity-section">
+                <div class="dash-right-aside rounded-5 pt-3">
+                    <div class="rigth-side-headding d-flex justify-content-between align-items-center pt-1 px-3 ">
+                        <h3 class="fs-5 mb-0">Recent Activity</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                            <path
+                                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                        </svg>
+                    </div>
+                    <div class="recent-activity mt-3">
+
+                        <div class="container-fluid ">
+                            <div id="recent-activity"></div>
+
+                            <!-- <div class="row">
+                                <div class="col-3 text-center">
+                                    <div class="recent-activity-icon d-flex justify-content-center align-items-center rounded-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                                            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mb-0">
+                                        Acme crop <b>upload deal to $18,000</b>
+                                    </p>
+                                    <small>
+                                        2 min ago
+                                    </small>
+
+                                </div>
+                            </div> -->
+
+                             
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const header_right_side_icon_arr = [
+            {
+                name: 'notifiction',
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                    </svg>`,
+                is_notifiction: true,
+                show_on_tab_to_mobile: false,
+            },
+            {
+                name: 'gift',
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                        <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z"/>
+                    </svg>`,
+                is_notifiction: false,
+                show_on_tab_to_mobile: false,
+            },
+            {
+                name: 'idea',
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+                    </svg>`,
+                is_notifiction: false,
+                show_on_tab_to_mobile: false,
+            },
+            ,
+            {
+                name: 'activity',
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
+                    </svg>`,
+                is_notifiction: false,
+                show_on_tab_to_mobile: true,
+            }
+        ];
+
+        document.getElementById('header-icons').innerHTML = header_right_side_icon_arr.map(
+            (e) =>
+                `<div id="${e.name}" class="icon-contain d-flex align-items-center justify-content-center rounded-circle ms-2 ${e.is_notifiction ? `notification_icon position-relative ` : ``}  ${e.show_on_tab_to_mobile ? `d-block d-xl-none` : ``}">
+                    ${e.icon}
+                    ${e.is_notifiction ? `
+                        <span class="position-absolute d-flex align-items-center justify-content-center bg-white rounded-circle" 
+                            >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="8px" fill="red" class="bi bi-ban" viewBox="0 0 16 16" >
+                                <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
+                            </svg>
+                        </span>
+                        
+                        
+                        ` : ``}  
+                </div>`
+        ).join('');  // .join(''): Combines those three SVG strings into a single continuous string without any commas between them.
+
+
+
+        const recent_activities_arr = [
+            {
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+                    </svg>`,
+                title: `Acme crop <b>upload deal to $18,000</b>`,
+                time: '2 min ago'
+            },
+            {
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+</svg>`,
+                title: `New Contact aded <b>sara jasim</b> from Tech Com`,
+                time: '2 min ago'
+            },
+            {
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16" style="transform:  scaleX(-1);">
+  <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.7 8.7 0 0 0-1.921-.306 7 7 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254l-.042-.028a.147.147 0 0 1 0-.252l.042-.028zM7.8 10.386q.103 0 .223.006c.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96z"/>
+</svg>`,
+                title: `<b>Follow up </b> cal completed with local Bakery`,
+                time: '1 hours ago'
+            }
+            , {
+                icon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-badge-ad" viewBox="0 0 16 16">
+  <path d="m3.7 11 .47-1.542h2.004L6.644 11h1.261L5.901 5.001H4.513L2.5 11zm1.503-4.852.734 2.426H4.416l.734-2.426zm4.759.128c-1.059 0-1.753.765-1.753 2.043v.695c0 1.279.685 2.043 1.74 2.043.677 0 1.222-.33 1.367-.804h.057V11h1.138V4.685h-1.16v2.36h-.053c-.18-.475-.68-.77-1.336-.77zm.387.923c.58 0 1.002.44 1.002 1.138v.602c0 .76-.396 1.2-.984 1.2-.598 0-.972-.449-.972-1.248v-.453c0-.795.37-1.24.954-1.24z"/>
+  <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+</svg>`,
+                title: `Proposel sent to <b>UIX Design Lab</b>`,
+                time: '5 hours ago'
+            }
+
+        ]
+
+        document.getElementById('recent-activity').innerHTML = recent_activities_arr.map(
+            (e) => `
+                    <div class="row mb-3">
+                        <div class="col-4 text-center d-flex justify-content-center">
+                            <div class="recent-activity-icon d-flex justify-content-center align-items-center rounded-2">
+                                ${e.icon}
+                            </div>
+                        </div>
+                        <div class="col-8  ps-xxl-0">
+                            <p class="mb-0 fs-6">
+                                ${e.title}
+                            </p>
+                            <small>
+                                ${e.time}
+                            </small>
+
+                        </div>
+                    </div>
+            `
+        ).join(''); // .join(''): Combines those three SVG strings into a single continuous string without any commas between them.
+
+
+
+
+
+        const activityBtn = document.getElementById('activity');
+
+        const activtySection = document.getElementById('activity-section');
+
+        activityBtn.addEventListener('click', (event) => {
+            // activtySection.classList.toggle('d-block');
+            activtySection.classList.toggle('acitivity-section-show');
+            // activtySection.classList.toggle('d-none');
+            // activtySection.classList.add('acitivity-section-hide');
+
+        })
+
+
+        const mainMenuAside = document.getElementById('main-menu-aside');
+        const menuBtn = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', (event) => {
+            // mainMenuAside.classList.toggle('d-block');
+            mainMenuAside.classList.toggle('main-menu-aside-show');
+            // mainMenuAside.classList.toggle('d-none');
+        })
+
+
+    </script>
+</body>
+
+</html>
